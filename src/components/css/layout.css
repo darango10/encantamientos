@@ -299,7 +299,7 @@ blockquote > p::before {
   display: inline-block;
   height: 32px;
   left: -50px;
-  -webkit-mask: url("../img/quote.png") no-repeat center/contain;
+  -webkit-mask: url("../../img/quote.png") no-repeat center/contain;
   position: absolute;
   top: 4px;
   width: 38px;
@@ -2595,7 +2595,7 @@ pre:last-child {
 
 .owl-carousel .owl-video-play-icon {
   -webkit-backface-visibility: hidden;
-  background: url("../img/owl.video.play.png") no-repeat;
+  background: url("../../img/owl.video.play.png") no-repeat;
   cursor: pointer;
   height: 80px;
   left: 50%;
@@ -3382,7 +3382,7 @@ html[xmlns] .slides {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(../img/photoswipe/default-skin.png) 0 0 no-repeat;
+  background: url(../../img/photoswipe/default-skin.png) 0 0 no-repeat;
   background-size: 264px 88px;
   height: 44px;
   width: 44px;
@@ -3393,7 +3393,7 @@ html[xmlns] .slides {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(../img/photoswipe/default-skin.svg);
+    background-image: url(../../img/photoswipe/default-skin.svg);
   }
 
   .pswp--svg .pswp__button--arrow--left,
@@ -3691,7 +3691,7 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active .pswp__preloader__icn {
   /* We use .gif in browsers that don't support CSS animation */
-  background: url(../img/photoswipe/preloader.gif) 0 0 no-repeat;
+  background: url(../../img/photoswipe/preloader.gif) 0 0 no-repeat;
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -8467,11 +8467,11 @@ img {
 }
 
 .texture-background {
-  background-image: url(../img/background-texture-cover.jpg);
+  background-image: url(../../img/background-texture-cover.jpg);
 }
 
 .pattern-background:before {
-  background-image: url(../img/patterns/pattern8.png);
+  background-image: url(../../img/patterns/pattern8.png);
 }
 
 @media (min-width: 768px) {
@@ -8917,7 +8917,7 @@ img {
 }
 
 .preloader_image {
-  background-image: url(../img/preloader.png);
+  background-image: url(../../img/preloader.png);
   background-position: center;
   background-repeat: no-repeat;
   height: 256px;
@@ -8967,47 +8967,47 @@ body.boxed {
 }
 
 .pattern1 {
-  background-image: url(../img/patterns/pattern1.png);
+  background-image: url(../../img/patterns/pattern1.png);
 }
 
 .pattern2 {
-  background-image: url(../img/patterns/pattern2.png);
+  background-image: url(../../img/patterns/pattern2.png);
 }
 
 .pattern3 {
-  background-image: url(../img/patterns/pattern3.png);
+  background-image: url(../../img/patterns/pattern3.png);
 }
 
 .pattern4 {
-  background-image: url(../img/patterns/pattern4.png);
+  background-image: url(../../img/patterns/pattern4.png);
 }
 
 .pattern5 {
-  background-image: url(../img/patterns/pattern5.png);
+  background-image: url(../../img/patterns/pattern5.png);
 }
 
 .pattern6 {
-  background-image: url(../img/patterns/pattern6.png);
+  background-image: url(../../img/patterns/pattern6.png);
 }
 
 .pattern7 {
-  background-image: url(../img/patterns/pattern7.png);
+  background-image: url(../../img/patterns/pattern7.png);
 }
 
 .pattern8 {
-  background-image: url(../img/patterns/pattern8.png);
+  background-image: url(../../img/patterns/pattern8.png);
 }
 
 .pattern9 {
-  background-image: url(../img/patterns/pattern9.png);
+  background-image: url(../../img/patterns/pattern9.png);
 }
 
 .pattern10 {
-  background-image: url(../img/patterns/pattern10.png);
+  background-image: url(../../img/patterns/pattern10.png);
 }
 
 .pattern11 {
-  background-image: url(../img/patterns/pattern11.png);
+  background-image: url(../../img/patterns/pattern11.png);
 }
 
 .boxed .container {
@@ -9041,19 +9041,19 @@ body.boxed {
 
 /*common background sections*/
 .s-map-dark {
-  background-image: url("../img/parallax/map-dark.jpg");
+  background-image: url("../../img/parallax/map-dark.jpg");
 }
 
 .s-map-light {
-  background-image: url("../img/parallax/map-light.jpg");
+  background-image: url("../../img/parallax/map-light.jpg");
 }
 
 .s-light-abstract {
-  background-image: url("../img/parallax/light-abstract.jpg");
+  background-image: url("../../img/parallax/light-abstract.jpg");
 }
 
 .s-light-wood {
-  background-image: url("../img/parallax/light-wood.jpg");
+  background-image: url("../../img/parallax/light-wood.jpg");
 }
 
 /*bordered columns*/
@@ -13815,7 +13815,7 @@ span.muted-bg {
 }
 
 .pattern {
-  background-image: url("../img/patterns/pattern13.png");
+  background-image: url("../../img/patterns/pattern13.png");
 }
 
 .ls.ms.opacity {
@@ -20061,7 +20061,7 @@ a.logo.flex-column.text-center {
 
 @media (min-width: 1200px) {
   #search_modal .widget:before {
-    background: url("../images/logo.png") no-repeat 0 0;
+    background: url("../../images/logo.png") no-repeat 0 0;
     background-size: contain;
     content: "";
     height: 100%;
@@ -20436,7 +20436,7 @@ body.active-side-header.slide-right .page_header_side {
 .page_slider {
   clear: both;
   overflow: hidden;
-  position: relative;
+  position: absolute;
 }
 
 .page_slider > img {
@@ -21114,7 +21114,7 @@ body.active-side-header.slide-right .page_header_side {
 ** 404
 */
 .page_404 {
-  background-image: url("../images/404.jpg");
+  background-image: url("../../images/404.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22188,7 +22188,7 @@ a:hover > img {
   display: inline-block;
   height: 40px;
   left: -15px;
-  -webkit-mask: url("../img/quote.png") no-repeat center/cover;
+  -webkit-mask: url("../../img/quote.png") no-repeat center/cover;
   position: absolute;
   top: -5px;
   width: 48px;
@@ -22462,7 +22462,7 @@ img.absolute_image {
 }
 
 .page_title {
-  background-image: url("../img/title-bg.jpg");
+  background-image: url("../../img/title-bg.jpg");
 }
 
 .page_title.s-overlay::before {
@@ -22613,7 +22613,7 @@ img.absolute_image {
 }
 
 .page_footer.s-parallax {
-  background-image: url("../images/parallax/video_section_background.jpg");
+  background-image: url("../../images/parallax/video_section_background.jpg");
 }
 
 .page_footer .side-icon-box {
@@ -22693,7 +22693,7 @@ img.absolute_image {
 
 .page_copyright.cover-background,
 .page_copyright.s-parallax {
-  background-image: url("../images/bg-section-video.jpg");
+  background-image: url("../../images/bg-section-video.jpg");
 }
 
 .item-hover-content {
@@ -22812,20 +22812,20 @@ img.absolute_image {
 }
 
 .section-video {
-  background-image: url("../images/bg-section-video.jpg");
+  background-image: url("../../images/bg-section-video.jpg");
 }
 
 .section-home {
-  background: url("../images/bg-section-home.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-home.jpg") no-repeat center/cover;
 }
 
 .section-form {
-  background: url("../images/bg-section-form.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-form.jpg") no-repeat center/cover;
 }
 
 @media (max-width: 1199px) {
   .section-counter {
-    background-image: url("../images/bg-section-video.jpg");
+    background-image: url("../../images/bg-section-video.jpg");
   }
 }
 
@@ -22855,19 +22855,19 @@ img.absolute_image {
 }
 
 .section-forecast {
-  background: url("../images/bg-section-forecast.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-forecast.jpg") no-repeat center/cover;
 }
 
 .section-service {
-  background: url("../images/bg-section-service.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-service.jpg") no-repeat center/cover;
 }
 
 .features-section {
-  background: url("../images/bg-section-features.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-features.jpg") no-repeat center/cover;
 }
 
 .section-shop {
-  background: url("../images/bg-section-shop.jpg") no-repeat center/cover;
+  background: url("../../images/bg-section-shop.jpg") no-repeat center/cover;
 }
 
 .mailchimp-1 {
@@ -23092,7 +23092,7 @@ img.absolute_image {
 }
 
 .comingsoon-page {
-  background-image: url("../images/404.jpg");
+  background-image: url("../../images/404.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
