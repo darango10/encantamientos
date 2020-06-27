@@ -9662,7 +9662,7 @@ body.boxed {
 .btn-maincolor,
 .btn-maincolor2,
 .btn-maincolor3 {
-  color: #fff;
+  color: #fff!important;
 }
 
 .btn-maincolor,
@@ -9687,8 +9687,8 @@ body.boxed {
 }
 
 .btn-maincolor {
-  background-color: #ca416e;
-  border-color: #ca416e;
+  background-color: #ca416e!important;
+  border-color: #ca416e!important;
 }
 
 .btn-maincolor:hover {

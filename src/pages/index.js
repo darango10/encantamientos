@@ -15,6 +15,8 @@ import Testimonials from "../components/Home/Testimonials"
 import Video from "../components/Home/Video"
 import Counter from "../components/Home/Counter"
 import Footer from "../components/footer"
+import BackgroundSlider from "gatsby-image-background-slider"
+import { graphql, useStaticQuery } from "gatsby"
 
 
 const IndexPage = () => (
@@ -26,6 +28,7 @@ const IndexPage = () => (
 
 
         <Slider/>
+
 
         {/*// <!-- Section Services -->*/}
         <Services/>
