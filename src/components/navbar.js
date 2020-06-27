@@ -1,11 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
 import {FaFacebook} from "react-icons/all"
 import {FaLinkedinIn} from "react-icons/all"
 import {FaTwitter} from "react-icons/all"
 import {FaInstagram} from "react-icons/all"
 import {FaYoutube} from "react-icons/all"
+import style from "./css/layout.css"
 
 const Navbar = () => {
+
+  const [isOpen, setNav] = useState(false)
+
+  const toggleNav = () => {
+    setNav(isOpen => !isOpen)
+  }
+
+
   return (
     <div className="header_absolute ">
 
@@ -58,8 +67,32 @@ const Navbar = () => {
           </div>
         </div>
         {/*// <!-- header toggler -->*/}
-        <span className="toggle_menu"><span></span></span>
+        <span className="toggle_menu" onClick={toggleNav}><span></span></span>
       </header>
+      {isOpen
+        ?<div className="showNav">
+          <ul className="menuMovil">
+            <li className="active">
+              <a href="index.html">Inicio</a>
+            </li>
+
+            <li>
+              <a href="blog-right.html">Servicios</a>
+            </li>
+
+            <li>
+              <a href="blog-right.html">Testimonios</a>
+            </li>
+
+            <li>
+              <a href="blog-right.html">Comunícate con Nosotros</a>
+            </li>
+
+
+          </ul>
+        </div>
+        :null
+      }
 
     </div>
   )
