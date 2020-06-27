@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import logo from "../images/logo.png"
+import Navbar from "./navbar"
 
 const Header = ({ siteTitle }) => (
   <div className="header_absolute ">
@@ -25,6 +26,7 @@ const Header = ({ siteTitle }) => (
         </div>
       </div>
     </section>
+    <Navbar/>
   </div>
 )
 

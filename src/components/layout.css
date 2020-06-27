@@ -8476,7 +8476,7 @@ img {
 
 @media (min-width: 768px) {
   .cover-image {
-    background-position: 50% 50%;
+    background-position: 100% 100%;
     bottom: 0;
     display: block;
     left: 0;
@@ -9355,6 +9355,7 @@ body.boxed {
 
 .item-media img {
   width: 100%;
+  height: 335px;
 }
 
 .item-media.cover-image {
@@ -9465,13 +9466,13 @@ body.boxed {
 }
 
 [class*="-item"] .links-wrap a:before {
-  content: "\f002";
-  font-family: "FontAwesome";
+  /*content: "\f002";*/
+  /*font-family: "FontAwesome";*/
 }
 
 [class*="-item"] .links-wrap a.link-anchor:before {
-  content: "\e90f";
-  font-family: "icomoon";
+  /*content: "\e90f";*/
+  /*font-family: "icomoon";*/
 }
 
 [class*="-item"]:hover .links-wrap a {
@@ -16631,7 +16632,7 @@ a[class*='fa-']:before {
 }
 
 a.fa {
-  font-size: 0;
+  /*font-size: 0;*/
   line-height: 0;
   margin-left: 8px;
   margin-right: 8px;
@@ -19772,7 +19773,7 @@ a img.aligncenter {
 .header_absolute .page_header,
 .header_absolute .page_header_wrapper {
   left: 0;
-  position: absolute;
+  /*position: absolute;*/
   right: 0;
   z-index: 1002;
 }
