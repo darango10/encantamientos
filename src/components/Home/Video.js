@@ -1,4 +1,5 @@
 import React from "react"
+import {FaPlay} from "react-icons/all"
 
 const Video = () => {
   return (
@@ -14,8 +15,8 @@ const Video = () => {
               <span>It improves interpersonal skills like presentation skills</span>
             </p>
             <div className="divider-40 divider-xl-60"></div>
-            <a href="#" className="photoswipe-link photoswipe-link-button"
-               data-iframe="https://www.youtube.com/embed/mcixldqDIEQ" data-index="1"></a>
+            <a href="#" className="photoswipe-link"
+               data-iframe="https://www.youtube.com/embed/mcixldqDIEQ" data-index="1"><FaPlay/></a>
           </div>
         </div>
       </div>

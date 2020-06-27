@@ -14,6 +14,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: process.env.TAWK_ID,
+        // get this from the tawk script widget
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
