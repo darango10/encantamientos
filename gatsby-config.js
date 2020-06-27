@@ -6,11 +6,19 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: process.env.TAWK_ID,
+        // get this from the tawk script widget
       },
     },
     `gatsby-transformer-sharp`,

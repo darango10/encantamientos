@@ -1,21 +1,69 @@
 import React from "react"
-import { Link } from "gatsby"
+import "bootstrap/dist/css/bootstrap.min.css"
+import "../components/css/animations.css"
+
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Services from "../components/Home/Services"
+import Author from "../components/Home/Author"
+import Benefits from "../components/Home/Benefits"
+import Gallery from "../components/Home/Gallery"
+import FeaturedBlog from "../components/Home/FeaturedBlog"
+import Slider from "../components/Home/Slider"
+import Team from "../components/Home/Team"
+import Testimonials from "../components/Home/Testimonials"
+import Video from "../components/Home/Video"
+import Counter from "../components/Home/Counter"
+import Footer from "../components/footer"
+import BackgroundSlider from "gatsby-image-background-slider"
+import { graphql, useStaticQuery } from "gatsby"
+
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div id="canvas">
+      <div id="box_wrapper">
+
+        {/*// <!-- template sections -->*/}
+
+
+        <Slider/>
+
+
+        {/*// <!-- Section Services -->*/}
+        <Services/>
+
+        {/*// <!-- Section About Author -->*/}
+        <Author/>
+
+        {/*// <!-- Section Team -->*/}
+        <Team/>
+
+        {/*// <!-- Section Testimonials -->*/}
+        <Testimonials/>
+
+        {/*// <!-- Section features -->*/}
+        <Benefits/>
+
+        {/*// <!--Section Gallery-->*/}
+        <Gallery/>
+
+        {/*// <!-- Section Video -->*/}
+        <Video/>
+
+        {/*// <!-- Section Counter -->*/}
+        <Counter/>
+
+        {/*// <!-- Section Blog -->*/}
+        <FeaturedBlog/>
+
+        <Footer/>
+
+
+      </div>
+      {/*// <!-- eof #box_wrapper -->*/}
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    {/*// <!-- eof #canvas -->*/}
   </Layout>
 )
 
