@@ -22,7 +22,7 @@ const Team = () => {
 
             <div data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="1"
                  data-responsive-xs="1" data-nav="false" data-margin="60" data-loop="true">
-              <div className="vertical-item text-center team-layout box-shadow content-padding" style={{maxWidth:"30%", display: "inline-grid", margin: "0 20px 0 0"}}>
+              <div className="vertical-item text-center team-layout box-shadow content-padding colleagues">
                 <div className="item-media">
                   <img src={imagen1} alt="img"/>
                   <div className="media-links">
@@ -45,7 +45,7 @@ const Team = () => {
 
                 </div>
               </div>
-              <div className="vertical-item text-center team-layout box-shadow content-padding" style={{maxWidth:"30%", display: "inline-grid", margin: "0 20px 0 0"}}>
+              <div className="vertical-item text-center team-layout box-shadow content-padding colleagues">
                 <div className="item-media">
                   <img src={imagen2} alt="img"/>
                   <div className="media-links">
@@ -69,7 +69,7 @@ const Team = () => {
                 </div>
               </div>
 
-              <div className="vertical-item text-center team-layout box-shadow content-padding" style={{maxWidth:"30%", display: "inline-grid"}}>
+              <div className="vertical-item text-center team-layout box-shadow content-padding colleagues">
                 <div className="item-media">
                   <img src={imagen3} alt="img"/>
                   <div className="media-links">

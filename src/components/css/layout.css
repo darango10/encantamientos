@@ -14985,6 +14985,20 @@ filters
   border-top: 1px solid #10183c;
 }
 
+.colleagues{
+  width:30%!important;
+  display: inline-grid!important;
+  margin-right: 20px!important;
+}
+
+@media (max-width:767px){
+  .colleagues{
+    width:100%!important;
+    display: block!important;
+    margin-bottom: 50px!important;
+  }
+}
+
 /*
 ** Service
 */
