@@ -1,10 +1,8 @@
 import React, { useState } from "react"
-import {FaFacebook} from "react-icons/all"
-import {FaLinkedinIn} from "react-icons/all"
-import {FaTwitter} from "react-icons/all"
-import {FaInstagram} from "react-icons/all"
-import {FaYoutube} from "react-icons/all"
-import style from "./css/layout.css"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import links from "../constants/links"
+import social from "../constants/social-icons"
+
 
 const Navbar = () => {
 
@@ -28,23 +26,9 @@ const Navbar = () => {
                 {/*// <!-- main nav start -->*/}
                 <nav className="top-nav">
                   <ul className="nav sf-menu">
-                    <li className="active">
-                      <a href="index.html">Inicio</a>
-                    </li>
-
-                    <li>
-                      <a href="blog-right.html">Servicios</a>
-                    </li>
-
-                    <li>
-                      <a href="blog-right.html">Testimonios</a>
-                    </li>
-
-                    <li>
-                      <a href="blog-right.html">Comunícate con Nosotros</a>
-                    </li>
-
-
+                    {links.map((item, index) => (
+                      <li key={index}><AniLink fade to={item.path}>{item.text}</AniLink></li>
+                    ))}
                   </ul>
 
 
@@ -55,13 +39,15 @@ const Navbar = () => {
             </div>
             <div className="col-xl-3 col-9 order-1 order-xl-2 text-xl-right text-left">
 								<span className="social-icons">
-
-                  <a href="https://www.facebook.com/" className="fa fa-facebook " title="facebook"><FaFacebook/></a>
-									<a href="https://twitter.com/" className="fa fa-twitter " title="twitter"><FaTwitter/></a>
-									<a href="https://www.linkedin.com/" className="fa fa-linkedin " title="linkedin"><FaLinkedinIn/></a>
-									<a href="https://www.instagram.com/" className="fa fa-instagram " title="instagram"><FaInstagram/></a>
-									<a href="https://www.youtube.com/" className="fa fa-youtube-play " title="youtube"><FaYoutube/></a>
-
+                  {social.map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.url}
+                      className={item.class}
+                      target={"_blank"}
+                      rel={"noopener noreferrer"}
+                    >{item.icon}</a>
+                  ))}
 								</span>
             </div>
           </div>
@@ -70,28 +56,14 @@ const Navbar = () => {
         <span className="toggle_menu" onClick={toggleNav}><span></span></span>
       </header>
       {isOpen
-        ?<div className="showNav">
+        ? <div className="showNav">
           <ul className="menuMovil">
-            <li className="active">
-              <a href="index.html">Inicio</a>
-            </li>
-
-            <li>
-              <a href="blog-right.html">Servicios</a>
-            </li>
-
-            <li>
-              <a href="blog-right.html">Testimonios</a>
-            </li>
-
-            <li>
-              <a href="blog-right.html">Comunícate con Nosotros</a>
-            </li>
-
-
+            {links.map((item, index) => (
+              <li key={index}><AniLink fade to={item.path}>{item.text}</AniLink></li>
+            ))}
           </ul>
         </div>
-        :null
+        : null
       }
 
     </div>
