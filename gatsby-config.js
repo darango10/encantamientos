@@ -5,6 +5,18 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        // your WordPress source
+        baseUrl: `admin.encantamientos.com`,
+        protocol: `http`,
+        // is it hosted on wordpress.com, or self-hosted?
+        hostingWPCOM: false,
+        // does your site use the Advanced Custom Fields Plugin?
+        useACF: false
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-transition-link`,
