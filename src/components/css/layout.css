@@ -23351,3 +23351,10 @@ img.absolute_image {
 .thumbRounded {
     border-radius: 50%;
 }
+
+/*Call to Action*/
+.btnCall {
+    width: 200px !important;
+    display: block !important;
+    margin: 0 auto!important;
+}
