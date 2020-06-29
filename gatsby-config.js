@@ -5,6 +5,23 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve:`gatsby-source-wordpress`,
+      options:{
+        excludedRoutes:[
+          `/wp/v2/users/**`,
+          `/wp/v2/settings*`,
+          `/wp/v2/themes*`,
+        ],
+        baseUrl: `admin.encantamientos.com`,
+        protocol: `http`,
+        hostingWPCOM:false,
+        searchAndReplaceContentUrls:{
+          sourceUrl: `http://admin.encantamientos.com`,
+          replacementUrl:``,
+        }
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-transition-link`,
