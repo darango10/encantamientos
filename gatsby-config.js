@@ -6,15 +6,20 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        // your WordPress source
+      resolve:`gatsby-source-wordpress`,
+      options:{
+        excludedRoutes:[
+          `/wp/v2/users/**`,
+          `/wp/v2/settings*`,
+          `/wp/v2/themes*`,
+        ],
         baseUrl: `admin.encantamientos.com`,
         protocol: `http`,
-        // is it hosted on wordpress.com, or self-hosted?
-        hostingWPCOM: false,
-        // does your site use the Advanced Custom Fields Plugin?
-        useACF: false
+        hostingWPCOM:false,
+        searchAndReplaceContentUrls:{
+          sourceUrl: `http://admin.encantamientos.com`,
+          replacementUrl:``,
+        }
       }
     },
     `gatsby-plugin-react-helmet`,
