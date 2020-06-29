@@ -23340,7 +23340,7 @@ img.absolute_image {
     color: #ca416e;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1200px) {
     .showNav {
         display: none;
     }
