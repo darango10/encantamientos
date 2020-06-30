@@ -1,10 +1,5 @@
 import React from "react"
-import {GiPokerHand} from "react-icons/all"
-import {GiCrystalBall} from "react-icons/all"
-import {GiMagicPalm} from "react-icons/all"
-import {GiMagicPotion} from "react-icons/all"
-import {RiMoonClearLine} from "react-icons/all"
-import {GiRuneStone} from "react-icons/all"
+
 import {FaAngleRight} from "react-icons/all"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import servicios from "../../constants/servicios"
@@ -17,7 +12,7 @@ const Services = () => {
       <div className="col-12">
         <div className="row service-isotope">
           {servicios.map((item, index) =>(
-            <div className="col-xl-2 col-lg-4 col-md-6">
+            <div className="col-xl-2 col-lg-4 col-md-6" key={index}>
               <div className="vertical-item service-layout-3">
                 <div className="item-content">
                   <div className="icon-styled fs-50">

@@ -26,7 +26,7 @@ const Testimonials = () => {
 
   const testimonios = (getTestimonials.FeaturedPosts.edges)
 
-  console.log(testimonios)
+  // console.log(testimonios)
 
 
 
