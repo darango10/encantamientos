@@ -1,11 +1,5 @@
 import React from "react"
 import Layout from "../components/layout"
-import imagen1 from "../images/services/img_1.jpg"
-import imagen2 from "../images/services/img_2.jpg"
-import imagen3 from "../images/services/img_3.jpg"
-import imagen4 from "../images/services/img_4.jpg"
-import imagen5 from "../images/services/img_5.jpg"
-import imagen6 from "../images/services/img_6.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
 
@@ -13,7 +7,7 @@ const Servicios = () => {
 
   const getServicios = useStaticQuery(graphql`
       {
-          servicios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Servicios"}}}}, limit: 2, sort: {fields: date, order: DESC}) {
+          servicios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Servicios"}}}}, sort: {fields: date, order: DESC}) {
               edges {
                   node {
                       acf {
@@ -32,7 +26,7 @@ const Servicios = () => {
 
   const servicios = (getServicios.servicios.edges)
 
-  console.log(servicios)
+  // console.log(servicios)
 
   return (
     <Layout>

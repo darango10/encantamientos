@@ -7,13 +7,18 @@ const Testimonials = () => {
 
   const getTestimonials = useStaticQuery(graphql`
       {
-          FeaturedPosts: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Testimonios"}}}}, limit: 2, sort: {fields: date, order: DESC}) {
+          testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "TestimonioAmpliado"}}}}, limit: 2, sort: {fields: date, order: DESC}) {
               edges {
                   node {
                       acf {
-                          nombre
+                          nombretestimonio
+                          ocupaciontestimonio
+                          problema
+                          diagnostico
                           testimonio
-                          imagen {
+                          fechaconsulta
+                          solucion
+                          imagentestimonio {
                               source_url
                           }
                       }
@@ -24,7 +29,7 @@ const Testimonials = () => {
   `)
 
 
-  const testimonios = (getTestimonials.FeaturedPosts.edges)
+  const testimonios = (getTestimonials.testimonios.edges)
 
   // console.log(testimonios)
 
@@ -64,14 +69,14 @@ const Testimonials = () => {
                         </blockquote>
                       </div>
                       <div className="quote-title">
-                        <h5 className="mb-0 color-main2 bold">{testimonio.node.acf.nombre}</h5>
-                        <p className="mb-0 text-white">Happy Customer</p>
+                        <h5 className="mb-0 color-main2 bold">{testimonio.node.acf.nombretestimonio}</h5>
+                        <p className="mb-0 text-white">{testimonio.node.acf.ocupaciontestimonio}</p>
                       </div>
                     </div>
                     <div className="wrap-image">
                       <div className="quote-image">
                         <img className='thumbRounded'
-                             src={`http://admin.encantamientos.com${testimonio.node.acf.imagen.source_url}`}/>
+                             src={`http://admin.encantamientos.com${testimonio.node.acf.imagentestimonio.source_url}`}/>
                       </div>
                       <div className="owl-custom-nav">
                         <a href="#" className="owl-prev"><i className="ico ico-right-arrow"></i></a>
