@@ -23333,6 +23333,7 @@ img.absolute_image {
 }
 
 .menuMovil li a {
+    font-family: "El Messiri", sans-serif;
     color: white;
 }
 
@@ -23357,4 +23358,15 @@ img.absolute_image {
     width: 200px !important;
     display: block !important;
     margin: 0 auto!important;
+}
+
+
+/*ImagenSlider*/
+.imagenSlider{
+    height: 800px!important;
+}
+
+/*Links Menu*/
+.linksMenu{
+    font-family: "El Messiri", sans-serif;
 }

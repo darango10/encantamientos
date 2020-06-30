@@ -27,7 +27,7 @@ const Navbar = () => {
                 <nav className="top-nav">
                   <ul className="nav sf-menu">
                     {links.map((item, index) => (
-                      <li key={index}><AniLink fade to={item.path}>{item.text}</AniLink></li>
+                      <li key={index}><AniLink fade to={item.path} className="linksMenu">{item.text}</AniLink></li>
                     ))}
                   </ul>
 
