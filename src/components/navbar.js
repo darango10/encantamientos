@@ -14,6 +14,8 @@ const Navbar = () => {
 
 
   return (
+
+
     <div className="header_absolute ">
 
       {/*// <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->*/}
