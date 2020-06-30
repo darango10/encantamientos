@@ -1,5 +1,4 @@
 import React from "react"
-import BackgroundSlider from "gatsby-image-background-slider"
 import { graphql, useStaticQuery } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Carousel from "react-bootstrap/Carousel"
