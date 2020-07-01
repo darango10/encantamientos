@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Carousel from "react-bootstrap/Carousel"
+import { baseUrl } from "../../constants/url_path"
 
 const Slider = () => {
 
@@ -12,7 +13,7 @@ const Slider = () => {
               edges {
                   node {
                       acf {
-                          tituloSlider
+                          tituloslider
                           parrafoslider
                           calltoaction
                           imagenslider {
@@ -27,7 +28,7 @@ const Slider = () => {
 
 
   const backgrounds = (getBackgrounds.backgrounds.edges)
-  //
+
   // console.log(backgrounds)
 
 
@@ -39,7 +40,7 @@ const Slider = () => {
           <Carousel.Item key={index}>
             <img
               className="d-block w-100 imagenSlider"
-              src={`http://www.encantamientos.com/admin${background.node.acf.imagenslider.source_url}`}
+              src={`${baseUrl}${background.node.acf.imagenslider.source_url}`}
               alt="First slide"
             />
             <div className="container">
@@ -51,7 +52,7 @@ const Slider = () => {
                         <div className="divider-60 divider-xl-80"></div>
                         <div className="d-inline-block">
                           <h2 className="intro_featured_word">
-                            {background.node.acf.tituloSlider}
+                            {background.node.acf.tituloslider}
                           </h2>
                           <p style={{color:"white"}}>
                             {background.node.acf.parrafoslider}

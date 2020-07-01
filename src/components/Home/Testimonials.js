@@ -1,6 +1,7 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
+import { baseUrl } from "../../constants/url_path"
 
 
 const Testimonials = () => {
@@ -77,7 +78,7 @@ const Testimonials = () => {
                     <div className="wrap-image">
                       <div className="quote-image">
                         <img className='thumbRounded'
-                             src={`http://www.encantamientos.com/admin${testimonio.node.acf.imagentestimonio.source_url}`}/>
+                             src={`${baseUrl}${testimonio.node.acf.imagentestimonio.source_url}`}/>
                       </div>
                       <div className="owl-custom-nav">
                         <a href="#" className="owl-prev"><i className="ico ico-right-arrow"></i></a>

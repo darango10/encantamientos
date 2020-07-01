@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
+import { baseUrl } from "../constants/url_path"
 
 const Testimonios = () => {
 
-  const getTestimonials = useStaticQuery(graphql`    
+  const getTestimonials = useStaticQuery(graphql`
       {
           testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Testimonios"}}}}, sort: {fields: date, order: DESC}) {
               edges {
@@ -55,7 +56,7 @@ const Testimonios = () => {
                 <div className="row c-gutter-60 align-items-center">
 
                   <div className="col-lg-6 col-xl-5">
-                    <img src={`http://www.encantamientos.com/admin${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>
+                    <img src={`${baseUrl}${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>
                   </div>
 
                   <div className="col-lg-6 col-xl-7">
