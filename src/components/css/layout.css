@@ -23318,7 +23318,7 @@ img.absolute_image {
 
 .showNav {
     display: block;
-    height: 450px;
+    height: auto;
     background-color: #0B0E1E;
 }
 

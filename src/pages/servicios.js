@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
+import { baseUrl } from "../constants/url_path"
 
 const Servicios = () => {
 
@@ -49,7 +50,7 @@ const Servicios = () => {
               <div key={index} className="col-xl-4 col-lg-6">
                 <div className="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
                   <div className="item-media">
-                    <img src={`http://www.encantamientos.com/admin${servicio.node.acf.imagenservicio.source_url}`}
+                    <img src={`${baseUrl}${servicio.node.acf.imagenservicio.source_url}`}
                          alt="img"/>
                     <div className="media-links">
                       <a className="abs-link" title="" href="service-single.html"></a>
