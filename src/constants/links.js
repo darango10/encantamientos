@@ -14,6 +14,10 @@ export default [
     text: "Testimonios"
   },
   {
+    path: "/nosotros",
+    text: "Nosotros"
+  },
+  {
     path: "/contacto",
     text: "Comunicate con Nosotros"
   },

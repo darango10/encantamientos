@@ -7,7 +7,7 @@ const Testimonials = () => {
 
   const getTestimonials = useStaticQuery(graphql`
       {
-          testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "TestimonioAmpliado"}}}}, limit: 2, sort: {fields: date, order: DESC}) {
+          testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Testimonios"}}}}, limit: 2, sort: {fields: date, order: DESC}) {
               edges {
                   node {
                       acf {
@@ -16,11 +16,12 @@ const Testimonials = () => {
                           problema
                           diagnostico
                           testimonio
-                          fechaconsulta
+                          fechatestimonio
                           solucion
                           imagentestimonio {
                               source_url
                           }
+
                       }
                   }
               }
@@ -76,7 +77,7 @@ const Testimonials = () => {
                     <div className="wrap-image">
                       <div className="quote-image">
                         <img className='thumbRounded'
-                             src={`http://admin.encantamientos.com${testimonio.node.acf.imagentestimonio.source_url}`}/>
+                             src={`http://www.encantamientos.com/admin${testimonio.node.acf.imagentestimonio.source_url}`}/>
                       </div>
                       <div className="owl-custom-nav">
                         <a href="#" className="owl-prev"><i className="ico ico-right-arrow"></i></a>

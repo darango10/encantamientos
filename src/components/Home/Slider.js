@@ -12,11 +12,11 @@ const Slider = () => {
               edges {
                   node {
                       acf {
-                          titulo
-                          parrafo
+                          tituloSlider
+                          parrafoslider
                           calltoaction
-                          imagenSlider {
-                              source_url
+                          imagenslider {
+                            source_url
                           }
                       }
                   }
@@ -27,8 +27,8 @@ const Slider = () => {
 
 
   const backgrounds = (getBackgrounds.backgrounds.edges)
-
-  console.log(backgrounds)
+  //
+  // console.log(backgrounds)
 
 
   return (
@@ -39,7 +39,7 @@ const Slider = () => {
           <Carousel.Item key={index}>
             <img
               className="d-block w-100 imagenSlider"
-              src={`http://admin.encantamientos.com${background.node.acf.imagenSlider.source_url}`}
+              src={`http://www.encantamientos.com/admin${background.node.acf.imagenslider.source_url}`}
               alt="First slide"
             />
             <div className="container">
@@ -51,10 +51,10 @@ const Slider = () => {
                         <div className="divider-60 divider-xl-80"></div>
                         <div className="d-inline-block">
                           <h2 className="intro_featured_word">
-                            {background.node.acf.titulo}
+                            {background.node.acf.tituloSlider}
                           </h2>
                           <p style={{color:"white"}}>
-                            {background.node.acf.parrafo}
+                            {background.node.acf.parrafoslider}
                           </p>
                         </div>
                       </div>
