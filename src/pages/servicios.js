@@ -49,7 +49,7 @@ const Servicios = () => {
               <div key={index} className="col-xl-4 col-lg-6">
                 <div className="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
                   <div className="item-media">
-                    <img src={`http://admin.encantamientos.com${servicio.node.acf.imagenservicio.source_url}`}
+                    <img src={`http://www.encantamientos.com/admin${servicio.node.acf.imagenservicio.source_url}`}
                          alt="img"/>
                     <div className="media-links">
                       <a className="abs-link" title="" href="service-single.html"></a>

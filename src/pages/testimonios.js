@@ -4,9 +4,9 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const Testimonios = () => {
 
-  const getTestimonials = useStaticQuery(graphql`
+  const getTestimonials = useStaticQuery(graphql`    
       {
-          testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "TestimonioAmpliado"}}}}, sort: {fields: date, order: DESC}) {
+          testimonios: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Testimonios"}}}}, sort: {fields: date, order: DESC}) {
               edges {
                   node {
                       acf {
@@ -15,11 +15,12 @@ const Testimonios = () => {
                           problema
                           diagnostico
                           testimonio
-                          fechaconsulta
+                          fechatestimonio
                           solucion
                           imagentestimonio {
                               source_url
                           }
+
                       }
                   }
               }
@@ -54,7 +55,7 @@ const Testimonios = () => {
                 <div className="row c-gutter-60 align-items-center">
 
                   <div className="col-lg-6 col-xl-5">
-                    <img src={`http://admin.encantamientos.com${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>
+                    <img src={`http://www.encantamientos.com/admin${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>
                   </div>
 
                   <div className="col-lg-6 col-xl-7">
@@ -77,7 +78,7 @@ const Testimonios = () => {
                         {testimonio.node.acf.testimonio}
                       </p>
                       <footer>
-                        <span>{testimonio.node.acf.fecha}</span>
+                        <span>{testimonio.node.acf.fechatestimonio}</span>
                       </footer>
                     </blockquote>
 

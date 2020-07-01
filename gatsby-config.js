@@ -13,11 +13,11 @@ module.exports = {
           `/wp/v2/settings*`,
           `/wp/v2/themes*`,
         ],
-        baseUrl: `admin.encantamientos.com`,
+        baseUrl: `www.encantamientos.com/admin`,
         protocol: `http`,
         hostingWPCOM:false,
         searchAndReplaceContentUrls:{
-          sourceUrl: `http://admin.encantamientos.com`,
+          sourceUrl: `http://www.encantamientos.com/admin`,
           replacementUrl:``,
         }
       }
