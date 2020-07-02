@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
 import { baseUrl } from "../constants/url_path"
+import Image from "gatsby-image"
 
 const Servicios = () => {
 
@@ -14,7 +15,13 @@ const Servicios = () => {
                       acf {
                           tituloservicio
                           imagenservicio {
-                              source_url
+                              localFile {
+                                  childImageSharp {
+                                      fluid(quality: 100) {
+                                          ...GatsbyImageSharpFluid_withWebp
+                                      }
+                                  }
+                              }
                           }
                           descripcionservicio
                       }
@@ -49,9 +56,10 @@ const Servicios = () => {
             {servicios.map((servicio, index) => (
               <div key={index} className="col-xl-4 col-lg-6">
                 <div className="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
-                  <div className="item-media">
-                    <img src={`${baseUrl}${servicio.node.acf.imagenservicio.source_url}`}
-                         alt="img"/>
+                  <div className="item-media item-media-service">
+                    <Image fluid={servicio.node.acf.imagenservicio.localFile.childImageSharp.fluid} alt={servicio.node.acf.titulotestimonio}/>
+                    {/*<img src={`${baseUrl}${servicio.node.acf.imagenservicio.source_url}`}*/}
+                    {/*     alt="img"/>*/}
                     <div className="media-links">
                       <a className="abs-link" title="" href="service-single.html"></a>
                     </div>

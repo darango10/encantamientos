@@ -3,13 +3,13 @@ import { graphql, useStaticQuery } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Carousel from "react-bootstrap/Carousel"
 import { baseUrl } from "../../constants/url_path"
+import Image from "gatsby-image"
 
 const Slider = () => {
 
   const getBackgrounds = useStaticQuery(graphql`
       {
-
-          backgrounds:allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Slider"}}}}, limit: 3, sort: {fields: date, order: DESC}) {
+          backgrounds: allWordpressPost(filter: {categories: {elemMatch: {name: {eq: "Slider"}}}}, limit: 3, sort: {fields: date, order: DESC}) {
               edges {
                   node {
                       acf {
@@ -17,7 +17,13 @@ const Slider = () => {
                           parrafoslider
                           calltoaction
                           imagenslider {
-                            source_url
+                              localFile {
+                                  childImageSharp {
+                                      fluid(quality:100) {
+                                          ...GatsbyImageSharpFluid_withWebp
+                                      }
+                                  }
+                              }
                           }
                       }
                   }
@@ -38,11 +44,14 @@ const Slider = () => {
       <Carousel>
         {backgrounds.map((background, index) =>(
           <Carousel.Item key={index}>
-            <img
-              className="d-block w-100 imagenSlider"
-              src={`${baseUrl}${background.node.acf.imagenslider.source_url}`}
-              alt="First slide"
-            />
+            <Image className="d-block w-100 imagenSlider"
+                   fluid={background.node.acf.imagenslider.localFile.childImageSharp.fluid}
+                   alt={background.node.acf.tituloslider}/>
+            {/*<img*/}
+            {/*  className="d-block w-100 imagenSlider"*/}
+            {/*  src={`${baseUrl}${background.node.acf.imagenslider.source_url}`}*/}
+            {/*  alt="First slide"*/}
+            {/*/>*/}
             <div className="container">
               <div className="row">
                 <div className="col-12">

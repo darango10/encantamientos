@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
 import { baseUrl } from "../constants/url_path"
+import Image from "gatsby-image"
 
 const Testimonios = () => {
 
@@ -19,7 +20,13 @@ const Testimonios = () => {
                           fechatestimonio
                           solucion
                           imagentestimonio {
-                              source_url
+                              localFile {
+                                  childImageSharp {
+                                      fluid(quality: 100) {
+                                          ...GatsbyImageSharpFluid_withWebp
+                                      }
+                                  }
+                              }
                           }
 
                       }
@@ -56,7 +63,8 @@ const Testimonios = () => {
                 <div className="row c-gutter-60 align-items-center">
 
                   <div className="col-lg-6 col-xl-5">
-                    <img src={`${baseUrl}${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>
+                    <Image fluid={testimonio.node.acf.imagentestimonio.localFile.childImageSharp.fluid} alt={testimonio.node.acf.nombretestimonio}/>
+                    {/*<img src={`${baseUrl}${testimonio.node.acf.imagentestimonio.source_url}`} alt="img"/>*/}
                   </div>
 
                   <div className="col-lg-6 col-xl-7">
