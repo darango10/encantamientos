@@ -19,7 +19,7 @@ export default [
   },
   {
     path: "/contacto",
-    text: "Comunicate con Nosotros"
+    text: "Comunícate con Nosotros"
   },
 
 ]
