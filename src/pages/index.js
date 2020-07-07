@@ -42,19 +42,19 @@ const IndexPage = () => (
         <Testimonials/>
 
         {/*// <!-- Section features -->*/}
-        <Benefits/>
+        {/*<Benefits/>*/}
 
         {/*// <!--Section Gallery-->*/}
         <Gallery/>
 
         {/*// <!-- Section Video -->*/}
-        <Video/>
+        {/*<Video/>*/}
 
         {/*// <!-- Section Counter -->*/}
-        <Counter/>
+        {/*<Counter/>*/}
 
         {/*// <!-- Section Blog -->*/}
-        <FeaturedBlog/>
+        {/*<FeaturedBlog/>*/}
 
 
 

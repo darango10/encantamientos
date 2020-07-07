@@ -29,7 +29,7 @@ const Team = () => {
                     <a className="abs-link" title="" href="team-single.html"></a>
                   </div>
                 </div>
-                <div className="item-content bg-darkgrey">
+                <div className="item-content bg-darkgrey" style={{minHeight:'207px'}}>
                   <h5 className="mb-0 links-maincolor2">
                     <a href="team-single.html">Jeffrey M. Kaufman</a>
                   </h5>
@@ -52,7 +52,7 @@ const Team = () => {
                     <a className="abs-link" title="" href="team-single.html"></a>
                   </div>
                 </div>
-                <div className="item-content bg-darkgrey">
+                <div className="item-content bg-darkgrey" style={{minHeight:'207px'}}>
                   <h5 className="mb-0 links-maincolor2">
                     <a href="team-single.html">Hazel E. Mills</a>
                   </h5>
@@ -68,7 +68,29 @@ const Team = () => {
 
                 </div>
               </div>
+              <div className="vertical-item text-center team-layout box-shadow content-padding colleagues">
+                <div className="item-media">
+                  <img src={imagen2} alt="img"/>
+                  <div className="media-links">
+                    <a className="abs-link" title="" href="team-single.html"></a>
+                  </div>
+                </div>
+                <div className="item-content bg-darkgrey" style={{minHeight:'207px'}}>
+                  <h5 className="mb-0 links-maincolor2">
+                    <a href="team-single.html">Hazel E. Mills</a>
+                  </h5>
 
+                  <p className="team-position mb-30">
+                    Astrologer
+                  </p>
+                  <p className="social-icons">
+                    <a href="https://www.facebook.com/" className="fa fa-facebook" title="facebook"></a>
+                    <a href="https://www.instagram.com/" className="fa fa-instagram" title="instagram"></a>
+                    <a href="https://www.youtube.com/" className="fa fa-youtube-play" title="youtube"></a>
+                  </p>
+
+                </div>
+              </div>
               <div className="vertical-item text-center team-layout box-shadow content-padding colleagues">
                 <div className="item-media">
                   <img src={imagen3} alt="img"/>
@@ -76,7 +98,7 @@ const Team = () => {
                     <a className="abs-link" title="" href="team-single.html"></a>
                   </div>
                 </div>
-                <div className="item-content bg-darkgrey">
+                <div className="item-content bg-darkgrey" style={{minHeight:'207px'}}>
                   <h5 className="mb-0 links-maincolor2">
                     <a href="team-single.html">Tammy M. Smith</a>
                   </h5>
