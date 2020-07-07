@@ -57,7 +57,7 @@ const Servicios = () => {
               <div key={index} className="col-xl-4 col-lg-6">
                 <div className="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
                   <div className="item-media item-media-service">
-                    <Image fluid={servicio.node.acf.imagenservicio.localFile.childImageSharp.fluid} alt={servicio.node.acf.titulotestimonio}/>
+                    <Image fluid={servicio.node.acf.imagenservicio.localFile.childImageSharp.fluid} alt={servicio.node.acf.titulotestimonio} className="imagenServicios"/>
                     {/*<img src={`${baseUrl}${servicio.node.acf.imagenservicio.source_url}`}*/}
                     {/*     alt="img"/>*/}
                     <div className="media-links">

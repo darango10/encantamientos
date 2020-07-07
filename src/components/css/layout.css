@@ -9267,6 +9267,7 @@ body.boxed {
 
 .vertical-item.content-padding .item-content {
     padding: 40px;
+    min-height: 308px;
 }
 
 @media (max-width: 1199px) {
@@ -23384,4 +23385,9 @@ img.absolute_image {
 .logoImg{
     width:300px;
     height:200px;
+}
+
+/*ImagenServicios*/
+.imagenServicios{
+    height:100%;
 }
