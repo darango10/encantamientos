@@ -25,7 +25,7 @@ const Services = () => {
                   <p>
                     {item.text}
                   </p>
-                  <AniLink fade to="/servicios" className="mt-20 d-inline-block font-2">Read Now <i
+                  <AniLink fade to="/servicios" className="mt-20 d-inline-block font-2">Seguir Leyendo<i
                     className="fa fa-caret-right color-main ml-2"><FaAngleRight/></i></AniLink>
                 </div>
               </div>
