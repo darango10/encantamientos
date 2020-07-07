@@ -1,6 +1,6 @@
 import React from "react"
 import CircleImage from "../../images/circle-image.png"
-import imagen from "../../images/Maestro1.jpg"
+import imagen from "../../images/Galeria2.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Author = () => {

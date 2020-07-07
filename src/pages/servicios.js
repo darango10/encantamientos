@@ -72,7 +72,7 @@ const Servicios = () => {
                       {servicio.node.acf.descripcionservicio}
                     </p>
                     <AniLink fade to="/contacto" className="btn btn-outline-maincolor btnCall">
-                      Book Reading Now
+                      Seguir Leyendo
                     </AniLink>
                   </div>
                 </div>
