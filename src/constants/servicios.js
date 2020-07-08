@@ -4,38 +4,41 @@ import {GiCrystalBall} from "react-icons/all"
 import {GiMagicPalm} from "react-icons/all"
 import {GiMagicPotion} from "react-icons/all"
 import {RiMoonClearLine} from "react-icons/all"
-import {GiRuneStone} from "react-icons/all"
+import {FaCreditCard} from "react-icons/all"
 
 
 export default [
   {
-    icon: <GiPokerHand/>,
-    title: "Natal Chart",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    icon: <GiMagicPotion/>,
+    title: "Amor y Amarres",
+    text: "Los amarres solucionan aquello que directamente hace desmoronarse la relación, pero todos\n" +
+      "tienen un fin último: recuperar el amor perdido."
   },
   {
     icon: <GiCrystalBall/>,
-    title: "Transit Chart",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    title: "Dinero y Prosperidad sin límites",
+    text: "¿Estás listo para atraer abundancia ilimitada en tu vida?"
   },
   {
     icon: <GiMagicPalm/>,
-    title: "Medical Reading",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    title: "Magia, Hechizos y Protección",
+    text: "“La magia tiene que estar siempre al servicio de la gente”\n" +
+      "Llámanos y consigue cosas extraordinarias con ayuda de seres o fuerzas sobrenaturales."
   },
   {
-    icon: <GiMagicPotion/>,
-    title: "Couple's Reading",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    icon: <GiPokerHand/>,
+    title: "Energía y Tarot",
+    text: "Leemos la baraja de naipes a para consultar e interpretar hechos presentes, pasados, futuros\n" +
+      "o sueños…"
   },
   {
     icon: <RiMoonClearLine/>,
-    title: "Career Chart",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    title: "Salud, Limpieza y Espiritualidad",
+    text: "¿Quieres saber si hay energía negativa en tu vida y tu casa? debes fijarte en estas señales:"
   },
   {
-    icon: <GiRuneStone/>,
-    title: "Birt Stone",
-    text: "Sadipscing elitr sed diam nonumy eirmod."
+    icon: <FaCreditCard/>,
+    title: "Formas de pago:",
+    text: "Super giros, Western Union, efecty, Bancolombia"
   },
 ]

@@ -25,6 +25,7 @@ const Servicios = () => {
                           }
                           descripcionservicio
                       }
+                      slug
                   }
               }
           }
@@ -57,22 +58,22 @@ const Servicios = () => {
               <div key={index} className="col-xl-4 col-lg-6">
                 <div className="vertical-item bg-darkblue text-center service-layout-1 box-shadow  content-padding">
                   <div className="item-media item-media-service">
-                    <Image fluid={servicio.node.acf.imagenservicio.localFile.childImageSharp.fluid} alt={servicio.node.acf.titulotestimonio}/>
+                    <Image fluid={servicio.node.acf.imagenservicio.localFile.childImageSharp.fluid} alt={servicio.node.acf.tituloservicio} className="imagenServicios"/>
                     {/*<img src={`${baseUrl}${servicio.node.acf.imagenservicio.source_url}`}*/}
                     {/*     alt="img"/>*/}
                     <div className="media-links">
-                      <a className="abs-link" title="" href="service-single.html"></a>
+                      <AniLink fade to={`/servicio/${servicio.node.slug}`}></AniLink>
                     </div>
                   </div>
                   <div className="item-content">
                     <h5 className="mt-0 links-maincolor2">
-                      <a href="service-single.html">{servicio.node.acf.tituloservicio}</a>
+                      <AniLink fade to={`/servicio/${servicio.node.slug}`}>{servicio.node.acf.tituloservicio}</AniLink>
                     </h5>
                     <p>
                       {servicio.node.acf.descripcionservicio}
                     </p>
-                    <AniLink fade to="/contacto" className="btn btn-outline-maincolor btnCall">
-                      Book Reading Now
+                    <AniLink fade to={`/servicio/${servicio.node.slug}`} className="btn btn-outline-maincolor btnCall">
+                      Seguir Leyendo
                     </AniLink>
                   </div>
                 </div>

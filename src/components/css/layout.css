@@ -9267,6 +9267,7 @@ body.boxed {
 
 .vertical-item.content-padding .item-content {
     padding: 40px;
+    min-height: 337px;
 }
 
 @media (max-width: 1199px) {
@@ -14991,7 +14992,7 @@ filters
 }
 
 .colleagues {
-    width: 30% !important;
+    width: 20% !important;
     display: inline-grid !important;
     margin-right: 20px !important;
 }
@@ -23384,4 +23385,9 @@ img.absolute_image {
 .logoImg{
     width:300px;
     height:200px;
+}
+
+/*ImagenServicios*/
+.imagenServicios{
+    height:100%;
 }
