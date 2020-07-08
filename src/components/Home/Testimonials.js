@@ -3,6 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
 import { baseUrl } from "../../constants/url_path"
 import Image from "gatsby-image"
+import { FaAngleRight } from "react-icons/all"
 
 
 const Testimonials = () => {
@@ -53,10 +54,11 @@ const Testimonials = () => {
           <div className="col-xl-4 col-lg-5">
             <AniLink fade to="/testimonios">
             <p className="text-white text-center text-md-left fs-20 line-right mb-0">
-              <span>Read more testimonials</span>
+              <span>Leer Más<i
+                className="fa fa-caret-right color-main ml-2"/><FaAngleRight/></span>
             </p>
             <h3 className="special-heading mt-2 fs-60 text-center text-md-left">
-              <span>What <br/>People Say</span>
+              <span>Testimonios</span>
             </h3>
             </AniLink>
           </div>

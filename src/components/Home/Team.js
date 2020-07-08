@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
-import { FaAngleRight } from "react-icons/all"
+import { FaAngleRight, FaWhatsapp } from "react-icons/all"
 import { graphql, useStaticQuery } from "gatsby"
 
 const Team = () => {
@@ -53,7 +53,7 @@ const Team = () => {
               {maestros.map((maestro, index) => (
                 <div key={index} className="vertical-item text-center team-layout box-shadow content-padding colleagues">
                   <div className="item-media">
-                    <Image fluid={maestro.node.acf.imagenmaestro.localFile.childImageSharp.fluid} alt="img" style={{minHeight:'333px'}}/>
+                    <Image fluid={maestro.node.acf.imagenmaestro.localFile.childImageSharp.fluid} alt="img" style={{minHeight:'351px'}}/>
                     <div className="media-links">
                       <a className="abs-link" title="" href="team-single.html"></a>
                     </div>
@@ -67,8 +67,14 @@ const Team = () => {
                       {maestro.node.acf.especialidadMaestro}
                     </p>
                     <p className="social-icons">
-                      <AniLink fade to="/servicios" className="mt-20 d-inline-block font-2">Consultar Ahora<i
-                        className="fa fa-caret-right color-main ml-2"><FaAngleRight/></i></AniLink>
+                      {/*<AniLink fade to="/servicios" className="mt-20 d-inline-block font-2">Consultar Ahora<i*/}
+                      {/*  className="fa fa-caret-right color-main ml-2"><FaAngleRight/></i></AniLink>*/}
+                      <a
+                        href='https://wa.me/13213524962'
+                        target={"_blank"}
+                        rel={"noopener noreferrer"}
+                      >Consultar Ahora<i
+                        className="fa fa-caret-right color-main ml-2"><FaAngleRight/></i><FaWhatsapp/></a>
                     </p>
 
                   </div>
