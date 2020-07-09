@@ -12,7 +12,7 @@ const Services = () => {
       <div className="col-12">
         <div className="row service-isotope">
           {servicios.map((item, index) =>(
-            <div className="col-xl-2 col-lg-4 col-md-6" key={index}>
+            <div className="col-xl-2 col-lg-4 col-md-6" key={index} style={{minWidth:"20%"}}>
               <div className="vertical-item service-layout-3">
                 <div className="item-content">
                   <div className="icon-styled fs-50">

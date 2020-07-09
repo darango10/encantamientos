@@ -31,8 +31,14 @@ const Contacto = () => {
                   <i className="fa fa-phone"><FiPhone/></i>
                 </div>
                 <p>
-                  <strong>Teléfono:</strong> +1 2132836389<br/>
-                  <strong>Whatsapp:</strong> +1 (321)352-4962
+                  <strong>Teléfono:</strong><a className="fs-24 links-maincolor-hover font-2" href="tel:+13213524962">
+                  <mark>+1 (321)</mark>
+                  352-4962</a><br/>
+                  <strong>Whatsapp:</strong> <a className="fs-24 links-maincolor-hover font-2" href='https://wa.me/12132836389' target={"_blank"}
+                                                rel={"noopener noreferrer"}>
+                  <mark>+1 (213)</mark>
+                  283-6389</a>
+
 
                 </p>
               </div>

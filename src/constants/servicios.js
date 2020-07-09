@@ -36,9 +36,9 @@ export default [
     title: "Salud, Limpieza y Espiritualidad",
     text: "¿Quieres saber si hay energía negativa en tu vida y tu casa? debes fijarte en estas señales:"
   },
-  {
-    icon: <FaCreditCard/>,
-    title: "Formas de pago:",
-    text: "Super giros, Western Union, efecty, Bancolombia"
-  },
+  // {
+  //   icon: <FaCreditCard/>,
+  //   title: "Formas de pago:",
+  //   text: "Super giros, Western Union, efecty, Bancolombia"
+  // },
 ]

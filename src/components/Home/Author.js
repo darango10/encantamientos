@@ -8,7 +8,7 @@ const Author = () => {
       <div className="container">
         <div className="row align-center">
           <div className="col-lg-6">
-            <img src={imagen} alt="img" className="rounded-circle"/>
+            <img src={imagen} alt="img"/>
           </div>
           <div className="col-lg-6 text-center text-md-left">
             <div className="divider-60 divider-lg-0"></div>
