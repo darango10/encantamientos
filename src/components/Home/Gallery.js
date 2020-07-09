@@ -1,5 +1,4 @@
 import React from "react"
-import { AiOutlineSearch } from "react-icons/all"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 

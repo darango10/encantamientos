@@ -4,7 +4,6 @@ import {GiCrystalBall} from "react-icons/all"
 import {GiMagicPalm} from "react-icons/all"
 import {GiMagicPotion} from "react-icons/all"
 import {RiMoonClearLine} from "react-icons/all"
-import {FaCreditCard} from "react-icons/all"
 
 
 export default [

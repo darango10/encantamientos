@@ -22,7 +22,9 @@ const Header = ({ siteTitle }) => {
             </div>
             <div
               className="col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
-              <a className="fs-24 links-maincolor-hover font-2" href="tel:+13213524962">
+              <a className="fs-24 links-maincolor-hover font-2" href='https://wa.me/13213524962'
+                 target={"_blank"}
+                 rel={"noopener noreferrer"}>
                 <mark>+1 (321)</mark>
                 352-4962</a>
               <a href='https://wa.me/13213524962'

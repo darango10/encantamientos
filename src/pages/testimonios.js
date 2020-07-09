@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql, useStaticQuery } from "gatsby"
-import { baseUrl } from "../constants/url_path"
 import Image from "gatsby-image"
+import SEO from "../components/seo"
 
 const Testimonios = () => {
 
@@ -43,6 +43,7 @@ const Testimonios = () => {
 
   return (
     <Layout>
+      <SEO title="Testimonios" />
       <section className="page_title ds s-overlay s-parallax s-pt-130 s-pt-xl-150 s-pb-65">
         <div className="container">
           <div className="row">

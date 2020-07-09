@@ -1,5 +1,4 @@
 import React from "react"
-import imagen from '../images/logo.png'
 import logo from "../images/LogoEncantamientos.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 

@@ -1,7 +1,6 @@
 import React from "react"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { graphql, useStaticQuery } from "gatsby"
-import { baseUrl } from "../../constants/url_path"
 import Image from "gatsby-image"
 import { FaAngleRight } from "react-icons/all"
 

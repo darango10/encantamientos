@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 import image from "../images/about-img.png"
 import Team from "../components/Home/Team"
+import SEO from "../components/seo"
 
 const Nosotros = () => {
   return (
     <Layout>
+      <SEO title="Nosotros" />
       <section className="page_title ds s-overlay s-parallax s-pt-130 s-pt-xl-150 s-pb-65">
         <div className="container">
           <div className="row">

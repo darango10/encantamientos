@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Encantamientos`,
+    description: `Soluciona tus relaciones de pareja. En el amor la salud y la prosperidad. protegemos contra todo tipo de maleficios`,
+    author: `@CORE`,
+    image:'/BgEncantamientos.svg',
+    siteUrl:`http://www.encantamientos.com`
   },
   plugins: [
     {
@@ -22,6 +24,7 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-transition-link`,
@@ -50,9 +53,17 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/LogoEncantamientos.svg`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'http://www.encantamientos.com',
+        sitemap: 'http://www.encantamientos.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

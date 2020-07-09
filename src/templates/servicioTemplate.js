@@ -1,8 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Image from 'gatsby-image'
+import SEO from "../components/seo"
 
 export const query = graphql`
     query getServicio($slug: String!) {
@@ -31,11 +31,12 @@ export const query = graphql`
 
 const ServicioTemplate = ({data}) => {
 
-  const { tituloservicio, descripcionservicio, textoservicio, imagenservicio } = data.servicio.edges[0].node.acf;
+  const { tituloservicio, textoservicio, imagenservicio } = data.servicio.edges[0].node.acf;
   console.log(imagenservicio)
 
   return (
     <Layout>
+      <SEO title={tituloservicio} />
       <section className="page_title ds s-overlay s-parallax s-pt-130 s-pt-xl-150 s-pb-65">
         <div className="container">
           <div className="row">

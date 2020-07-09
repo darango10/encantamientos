@@ -1,6 +1,5 @@
 import React from "react"
 import imagen from "../../images/Galeria2.jpg"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Author = () => {
   return (

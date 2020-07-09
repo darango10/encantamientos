@@ -2,7 +2,6 @@ import React from "react"
 import { FaFacebook } from "react-icons/all"
 import { FaWhatsapp } from "react-icons/all"
 import { FaInstagram } from "react-icons/all"
-import { FaYoutube } from "react-icons/all"
 
 export default [
 
