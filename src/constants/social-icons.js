@@ -32,7 +32,7 @@ export default [
 
   {
     icon: <FaInstagram/>,
-    url:"https://www.instagram.com/",
+    url:"https://www.instagram.com/encantamientos.tarot",
     class:'fa fa-instagram'
   },
 

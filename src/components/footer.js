@@ -1,6 +1,6 @@
 import React from "react"
 import imagen from '../images/logo.png'
-import logo from "../images/Encantamientos_Mesa de trabajo 1.svg"
+import logo from "../images/LogoEncantamientos.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Footer = () => {

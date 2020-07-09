@@ -69,7 +69,9 @@ const Slider = () => {
                         </div>
                       </div>
                       <div className="intro_layer" data-animation="fadeInUp">
-                        <AniLink fade to="/servicios" className="btn btn-maincolor btn-slider btn-medium">{background.node.acf.calltoaction}</AniLink>
+                        <a href='https://wa.me/13213524962'
+                           target={"_blank"}
+                           rel={"noopener noreferrer"} className="btn btn-maincolor btn-slider btn-medium">{background.node.acf.calltoaction}</a>
                       </div>
                     </div>
                     {/*// <!-- eof .intro_layers -->*/}

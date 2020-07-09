@@ -48,9 +48,11 @@ const Author = () => {
               Nos reservamos el derecho de atenderlo.
             </p>
             <div className="divider-30 divider-xl-50"></div>
-            <AniLink fade to="/contacto" className="btn btn-outline-maincolor btnCall">
+            <a href='https://wa.me/13213524962'
+               target={"_blank"}
+               rel={"noopener noreferrer"} className="btn btn-outline-maincolor btnCall">
               Consulta Ahora
-            </AniLink>
+            </a>
           </div>
         </div>
       </div>

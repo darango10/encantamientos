@@ -59,7 +59,9 @@ const Nosotros = () => {
                 </div>
               </div>
               <div className="divider-30 divider-lg-30"></div>
-              <a href="pricing.html" className="btn btn-outline-maincolor btn-medium">Consulta Ahora</a>
+              <a href='https://wa.me/13213524962'
+                 target={"_blank"}
+                 rel={"noopener noreferrer"} className="btn btn-outline-maincolor btn-medium">Consulta Ahora</a>
             </div>
           </div>
         </div>

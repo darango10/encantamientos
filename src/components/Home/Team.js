@@ -55,12 +55,12 @@ const Team = () => {
                   <div className="item-media">
                     <Image fluid={maestro.node.acf.imagenmaestro.localFile.childImageSharp.fluid} alt="img" style={{minHeight:'351px'}}/>
                     <div className="media-links">
-                      <a className="abs-link" title="" href="team-single.html"></a>
+                      {/*<a className="abs-link" title="" href="team-single.html"></a>*/}
                     </div>
                   </div>
                   <div className="item-content bg-darkgrey" style={{minHeight:'299px'}}>
                     <h5 className="mb-0 links-maincolor2">
-                      <a href="team-single.html">{maestro.node.acf.nombremaestro}</a>
+                      <AniLink fade to="/nosotros">{maestro.node.acf.nombremaestro}</AniLink>
                     </h5>
 
                     <p className="team-position mb-30">
