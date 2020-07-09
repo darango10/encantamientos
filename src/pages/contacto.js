@@ -31,8 +31,9 @@ const Contacto = () => {
                   <i className="fa fa-phone"><FiPhone/></i>
                 </div>
                 <p>
-                  <strong>Phone:</strong> +12 345 678 9123<br/>
-                  <strong>Fax:</strong> +12 345 678 9123
+                  <strong>Teléfono:</strong> +1 2132836389<br/>
+                  <strong>Whatsapp:</strong> +1 (321)352-4962
+
                 </p>
               </div>
               <div className="divider-30 divider-lg-0"></div>
@@ -44,9 +45,9 @@ const Contacto = () => {
                   <i className="fa fa-map-marker"><FaMapMarkerAlt/></i>
                 </div>
                 <p>
-                  PO Box 54378<br/>
-                  4321 Your Address,<br/>
-                  Your City, Your Country
+                  1234 Santa Monica Blvd<br/>
+                  Beverly Hills<br/>
+                  CA 90210
                 </p>
               </div>
               <div className="divider-30 divider-lg-0"></div>
@@ -58,7 +59,7 @@ const Contacto = () => {
                   <i className="fa fa-envelope"><FaEnvelope/></i>
                 </div>
                 <p>
-                  <a href="mailto:info@example.com">info@example.com</a>
+                  <a href="mailto:info@example.com">info@encantamientos.com</a>
                 </p>
               </div>
             </div>
@@ -78,27 +79,27 @@ const Contacto = () => {
 
                     <div className="col-sm-6">
                       <div className="form-group has-placeholder">
-                        <label htmlFor="name">Full Name <span className="required">*</span></label>
+                        <label htmlFor="name">Nombre <span className="required">*</span></label>
                         <input type="text" aria-required="true" size="30" name="name" id="name"
-                               className="" placeholder="Full Name"/>
+                               className="" placeholder="Nombre"/>
                       </div>
                       <div className="form-group has-placeholder">
-                        <label htmlFor="email">Email address<span className="required">*</span></label>
+                        <label htmlFor="email">Email <span className="required">*</span></label>
                         <input type="email" aria-required="true" size="30" name="email" id="email"
                                className="" placeholder="Email"/>
                       </div>
                       <div className="form-group has-placeholder">
-                        <label htmlFor="subject">Subject<span className="required">*</span></label>
+                        <label htmlFor="subject">Asunto<span className="required">*</span></label>
                         <input type="text" aria-required="true" size="30" name="subject" id="subject"
-                               className="" placeholder="Subject"/>
+                               className="" placeholder="Asunto"/>
                       </div>
                     </div>
                     <div className="col-sm-6">
 
                       <div className="form-group has-placeholder">
-                        <label htmlFor="message">Message</label>
+                        <label htmlFor="message">Mensaje</label>
                         <textarea aria-required="true" rows="6" cols="45" name="message" id="message"
-                                  className="" placeholder="Message"></textarea>
+                                  className="" placeholder="Mensaje"></textarea>
                       </div>
                     </div>
                   </div>
@@ -106,7 +107,7 @@ const Contacto = () => {
                     <div className="col-sm-12">
                       <div className="form-group text-center">
                         <button type="submit" id="contact_form_submit" name="contact_submit"
-                                className="btn btn-maincolor btn-medium">Send Message
+                                className="btn btn-maincolor btn-medium">Enviar Mensaje
                         </button>
                       </div>
                     </div>

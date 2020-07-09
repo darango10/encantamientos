@@ -36,9 +36,9 @@ export default [
     class:'fa fa-instagram'
   },
 
-  {
-    icon: <FaYoutube/>,
-    url:"https://www.youtube.com/",
-    class:'fa fa-youtube-play'
-  },
+  // {
+  //   icon: <FaYoutube/>,
+  //   url:"https://www.youtube.com/",
+  //   class:'fa fa-youtube-play'
+  // },
 ]
