@@ -86,7 +86,7 @@ const Testimonials = () => {
                     </div>
                     <div className="wrap-image">
                       <div className="quote-image">
-                        <Image className="thumbRounded" fluid={testimonio.node.acf.imagentestimonio.localFile.childImageSharp.fluid} alt={testimonio.node.acf.nombretestimonio}/>
+                        <Image className="thumbRounded" fluid={testimonio.node.acf.imagentestimonio.localFile.childImageSharp.fluid} alt={testimonio.node.acf.nombretestimonio} style={{width:"120px", height:"120px"}}/>
                         {/*<img className='thumbRounded'*/}
                         {/*     src={`${baseUrl}${testimonio.node.acf.imagentestimonio.source_url}`}/>*/}
                       </div>

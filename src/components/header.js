@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/Encantamientos_Logo.png"
+import logo from "../images/Encantamientos_Mesa de trabajo 1.svg"
 import Navbar from "./navbar"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 

@@ -15892,7 +15892,7 @@ widget_recent_entries
 }
 
 .widget_text a {
-    text-decoration: underline;
+    /*text-decoration: underline;*/
 }
 
 .widget_text ul {
@@ -19998,7 +19998,7 @@ a.logo {
 
 a.logo img {
     display: inline-block;
-    max-height: 50px;
+    /*max-height: 50px;*/
 }
 
 a.logo .logo-text {
@@ -22625,7 +22625,7 @@ img.absolute_image {
 }
 
 .page_footer .logo img {
-    max-height: 55px;
+    /*max-height: 55px;*/
 }
 
 .page_footer .widget + [class*='widget-'] {
@@ -23383,8 +23383,8 @@ img.absolute_image {
 
 /*Logo*/
 .logoImg{
-    width:300px;
-    height:200px;
+    width:400px;
+    max-height:150px;
 }
 
 /*ImagenServicios*/
