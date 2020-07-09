@@ -31,13 +31,16 @@ const Contacto = () => {
                   <i className="fa fa-phone"><FiPhone/></i>
                 </div>
                 <p>
-                  <strong>Teléfono:</strong><a className="fs-24 links-maincolor-hover font-2" href="tel:+13213524962">
-                  <mark>+1 (321)</mark>
-                  352-4962</a><br/>
-                  <strong>Whatsapp:</strong> <a className="fs-24 links-maincolor-hover font-2" href='https://wa.me/12132836389' target={"_blank"}
-                                                rel={"noopener noreferrer"}>
+                  <strong>Teléfono:</strong><a className="fs-24 links-maincolor-hover font-2" href="tel:+12132836389">
                   <mark>+1 (213)</mark>
-                  283-6389</a>
+                  283-6389</a><br/>
+                  <strong>Whatsapp:</strong> <a className="fs-24 links-maincolor-hover font-2" href='https://wa.me/13213524962' target={"_blank"}
+                                                rel={"noopener noreferrer"}>
+                  <mark>+1 (321)</mark>
+                  352-4962</a>
+
+
+
 
 
                 </p>

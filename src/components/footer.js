@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="row align-center">
             <div className="col-xl-5 col-lg-5 text-center text-lg-left">
               <a href="./" className="logo">
-                <img src={imagen} alt="img"/>
+                <img src={imagen} alt="img" style={{height:"200px"}}/>
                 <span className="logo-text color-darkgrey">vedi</span>
               </a>
               <div className="divider-60 divider-lg-0"></div>

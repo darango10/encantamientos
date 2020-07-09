@@ -14,7 +14,7 @@ export default [
 
   {
     icon: <FaFacebook/>,
-    url:'https://facebook.com',
+    url:'https://www.facebook.com/Encantamientos.Tarot',
     class:'fa fa-facebook'
   },
 
