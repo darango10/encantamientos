@@ -84,7 +84,7 @@ const Contacto = () => {
 
               <div className="ds bordered box-shadow  p-lg-60 p-40">
 
-                <form className="contact-form c-mb-10 c-gutter-10" method="post" action="/">
+                <form className="contact-form c-mb-10 c-gutter-10" method="post" action="https://formspree.io/mzbjjlrw">
 
                   <div className="row">
 
