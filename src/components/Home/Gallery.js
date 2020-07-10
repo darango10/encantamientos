@@ -83,7 +83,7 @@ const Gallery = () => {
           <div className="col-12 text-center">
 
             <h3 className="text-center mt-0 mb-2 special-heading fs-60 color-main">
-              <span>Galeria</span>
+              <span>Galería</span>
             </h3>
             <div className="line"></div>
             {/*<p className="text-center fs-20 mt-4">*/}

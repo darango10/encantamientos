@@ -21,7 +21,7 @@ const Footer = () => {
                 <h3>Servicios</h3>
                 <ul className="menu">
                   <li className="menu-item">
-                    <a href="./shop-left.html">Nuestros Servicios</a>
+                    <AniLink fade to={'/servicios'}>Nuestros Servicios</AniLink>
                   </li>
                 </ul>
               </div>
@@ -33,10 +33,10 @@ const Footer = () => {
                 <h3>Nosotros</h3>
                 <ul className="menu">
                   <li className="menu-item">
-                    <a href="./index_blocks.html">Nosotros</a>
+                    <AniLink fade to={'/nosotros'}>Nosotros</AniLink>
                   </li>
                   <li className="menu-item">
-                    <a href="./about.html">Maestros</a>
+                    <AniLink fade to={'/nosotros'}>Maestros</AniLink>
                   </li>
                 </ul>
               </div>
